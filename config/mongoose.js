@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 // connect to the database
-mongoose.connect('mongodb://127.0.0.1:27017/authentication', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://ankitvis609:Sonu135790@cluster0.esi3ulq.mongodb.net/nodejsAuth');
 
 // acquire the connection (to check if it is successful)
 const db = mongoose.connection;

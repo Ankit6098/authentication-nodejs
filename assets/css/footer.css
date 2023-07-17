@@ -1,0 +1,13 @@
+/* footer */
+
+footer {
+    width: 100vw;
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #292929;
+    position: fixed;
+    bottom: 0;
+    font-size: 0.7rem;
+}
