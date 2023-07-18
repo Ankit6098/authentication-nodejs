@@ -6,6 +6,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 0;
 }
 
 .navbar-inner-container {
@@ -39,3 +41,92 @@
     align-items: center;
     font-size: 1.5rem;
 }
+
+.features-container {
+    width: 0px;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a2733;
+    position: fixed;
+    top: 4%;
+    right: 5%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.features-container.active {
+    width: 310px;
+    height: 510px;
+    transition: all 0.5s ease-in-out;
+}
+
+.inner-feature-container {
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.close-button i {
+    font-size: 1.5rem;
+}
+
+.features-heading {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    color: #5B42F3;
+}
+
+.features-heading i {
+    font-size: 1.2rem;
+}
+
+.features-heading h1 {
+    font-size: 1.5rem;  
+}
+
+.feature-ul {
+    list-style-type: none;
+    margin-left: 20px;
+    color: rgb(131, 131, 131);
+}
+
+.sub-feature-ul {
+    list-style-type: none;
+    margin-left: 35px;
+}
+
+.feature-ul li {
+    margin: 25px 0;
+}
+
+.sub-feature-ul li {
+    margin: 0;
+}
+
+.feature-ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.sub-feature-ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+

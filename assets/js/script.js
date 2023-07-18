@@ -17,3 +17,16 @@ showPassword.addEventListener('click', () => {
     }
     }
 );
+
+const menubar = document.querySelector('.fa-bars');
+const featureContainer = document.querySelector('.features-container');
+
+menubar.addEventListener('click', () => {
+    featureContainer.classList.toggle('active');
+});
+
+const closebutton = document.querySelector('.fa-times');
+
+closebutton.addEventListener('click', () => {
+    featureContainer.classList.toggle('active');
+});

@@ -3,7 +3,6 @@ const express = require('express');
 const app = express();
 const port = 3000;
 const path = require('path');
-
 const flash = require('connect-flash');
 const customMware = require('./config/middleware');
 
@@ -18,9 +17,7 @@ const passportGithub = require('./config/passport-github2-startegy');
 
 // set up the database
 const db = require('./config/mongoose');
-
 const MongoStore = require('connect-mongo');
-
 const bcrypt = require('bcrypt');
 
 // set up middleware
@@ -49,6 +46,9 @@ app.use(session({
     })
 }));
 
+// set up flash messages
+app.use(flash());
+app.use(customMware.setFlash);
 
 // set up passport
 app.use(passport.initialize());
@@ -59,10 +59,6 @@ app.use(passport.setAuthenticatedUser);
 
 // use express router
 app.use('/', require('./routes'));
-
-// set up flash messages
-// app.use(flash());
-// app.use(customMware.setFlash);
 
 // server listens on port 3000 for incoming connections
 app.listen(port, (err) => {

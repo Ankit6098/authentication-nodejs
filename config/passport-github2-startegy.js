@@ -3,6 +3,7 @@ const passport = require('passport');
 const githubStrategy = require('passport-github2').Strategy;
 const crypto = require('crypto');
 const User = require('../models/user');
+const { log } = require('console');
 
 // tell passport to use a new strategy for github login
 passport.use(new githubStrategy({
@@ -12,6 +13,8 @@ passport.use(new githubStrategy({
     },
     async function(request, accessToken, refreshToken, profile, done) {
         const user = await User.findOne({email: profile.emails[0].value});
+
+        console.log(process.env.GITHUB_CALLBACK_URL);
 
         if (!user) {
             const newUser = await User.create({

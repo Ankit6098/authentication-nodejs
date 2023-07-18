@@ -7,6 +7,8 @@
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
     background: #181a1b;
     display: flex;
     flex-direction: column;
@@ -228,4 +230,11 @@ input:-webkit-autofill {
     font-size: 0.8rem;
     color: #818181;
     margin-top: 20px;
+}
+
+@media screen and (max-width: 550px) {
+    .sign-in-container {
+        width: 350px;
+        height: 650px;
+    }
 }
