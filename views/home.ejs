@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/footer.css">
 </head>
 <body>
     <%- include('_navbar'); %>
-    <p>welcome</p>
-    <a href="/user/sign-out"><button>sign out</button></a>
+    <div class="welcome-container">
+        <img src="   https://cdn-icons-png.flaticon.com/512/2143/2143150.png " width="100px" height="100px" alt="">
+        <div class="welcome-heading">
+            <h1>Sucessfully Sign In!</h1>
+        </div>
+        <div class="user-details">
+            <!-- print the user name and email -->
+            <h1><%= user.name %></h1>
+            <h1><%= user.email %></h1>
+        </div>
+        <a href="/user/sign-out"><button>sign out</button></a>
+    </div>
+    <!-- <a href="/user/sign-out"><button>sign out</button></a> -->
     <%- include('_footer'); %>
 </body>
 </html>

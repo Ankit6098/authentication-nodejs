@@ -1,6 +1,7 @@
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const User = require('../models/user');
+const bcrypt = require('bcrypt');
 
 // authentication using passport
 passport.use(new LocalStrategy({
@@ -11,12 +12,26 @@ passport.use(new LocalStrategy({
         // find a user and establish the identity
         const user = await User.findOne({email: email});
         
-        if (!user || user.password != password) {
+        if (!user) {
             console.log('Invalid Username/Password');
             return done(null, false);
         }
 
-        return done(null, user);
+        // Load hash from database for the password.
+        bcrypt.compare(password, user.password)
+        .then(result => {
+            console.log(result);
+            // This will be either true or false, based on if the string
+            // matches or not.
+            if (result) {
+                return done(null, user);
+            }
+            console.log('Invalid username/password');
+            return done(null, false);
+        }).catch((error) => {
+            console.log("Error in hashing password");
+            return;
+        });
     }
 ));
 

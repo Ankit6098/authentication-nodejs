@@ -1,4 +1,5 @@
 const User = require('../models/user');
+const bcrypt = require('bcrypt');
 
 module.exports.welcome = function(req, res) {
     res.render('home', {
@@ -56,14 +57,46 @@ module.exports.create = async function(req, res) {
     const user = await User.findOne({email: req.body.email});
 
     // if doesn't exist, create user
+    // if (!user) {
+
+    //     const password = req.body.password;
+
+    //     // hashing password
+    //     const newUser = await User.create(req.body);
+    //     console.log('New user created!');
+    //     return res.redirect('/')
+    // } else {
+    //     console.log('User already exists!');
+    //     return res.redirect('back');
+    // }
+
     if (!user) {
-        const newUser = await User.create(req.body);
-        console.log('New user created!');
-        return res.redirect('/')
-    } else {
+        const plaintextPassword = req.body.password;
+        const saltRounds = 10;
+      
+        // Generate a hash of the password
+        bcrypt.hash(plaintextPassword, saltRounds, async (err, hash) => {
+          if (err) {
+            console.error(err);
+            return res.status(500).send('Error creating user');
+          }
+      
+          try {
+            const newUser = await User.create({
+              ...req.body,
+              password: hash // Store the hashed password in the database
+            });
+            console.log('New user created!');
+            return res.redirect('/');
+          } catch (err) {
+            console.error(err);
+            return res.status(500).send('Error creating user');
+          }
+        });
+      } else {
         console.log('User already exists!');
         return res.redirect('back');
-    }
+      }
 
     // redirect to login page
     // return res.redirect('/');

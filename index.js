@@ -21,6 +21,8 @@ const db = require('./config/mongoose');
 
 const MongoStore = require('connect-mongo');
 
+const bcrypt = require('bcrypt');
+
 // set up middleware
 app.use(express.urlencoded());
 

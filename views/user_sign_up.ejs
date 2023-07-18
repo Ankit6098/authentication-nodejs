@@ -4,18 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/sign-up.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/footer.css">
 </head>
 <body>
     <%- include('_navbar'); %>
-    <form action="/user/create-user" method="post">
-        <input type="text" name="name" required>
-        <input type="email" name="email" required>
-        <input type="password" name="password" required>
-        <input type="password" name="confirmPassword" required>
-        <input type="submit">
-    </form>
+    <div class="sign-up-container">
+        <div class="outline">
+            <form action="/user/create-user" method="post">
+                <p class="form-heading">
+                    <h1></h1>
+                    <h1 class="last-h1">Create Your Account</h1>
+                </p>
+                <div class="input-container">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="name" placeholder="Name" required>
+                </div>
+                <div class="input-container">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-container">
+                    <i class="fa-solid fa-key"></i>
+                    <input type="password" name="password" placeholder="Password" minlength="8" required>
+                </div>
+                <div class="confirm-input-container">
+                    <i class="fa-solid fa-key"></i>
+                    <input type="password" name="confirmPassword" placeholder="Confirm Password" class="password" required>
+                    <i class="fa-solid fa-eye show-password"></i>
+                </div>
+                <input type="submit" value="Sign In" class="sign-in-btn">
+                <div class="divider">
+                    <hr>
+                    <p>Or</p>
+                    <hr>
+                </div>
+                <div class="other-login-method-container">
+                    <a href="/user/auth/google"><img src="   https://cdn-icons-png.flaticon.com/512/281/281764.png " alt="" width="20px" height="20px"><span>Login with Google</span></a>
+                    <a href="/user/auth/github"><img src="   https://cdn-icons-png.flaticon.com/512/733/733553.png " alt="" width="20px" height="20px"><span>Login with Github</span></a>
+                </div>
+                <p class="sign-up-para">Already have an Accout ? <a href="/">Sign in</a></p>
+            </form>
+        </div>
+    </div>
+
     <%- include('_footer'); %>
+
+    <script src="/js/sign-in.js"></script>
 </body>
 </html>
