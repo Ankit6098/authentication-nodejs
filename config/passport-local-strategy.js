@@ -20,7 +20,6 @@ passport.use(new LocalStrategy({
         // Load hash from database for the password.
         bcrypt.compare(password, user.password)
         .then(result => {
-            console.log(result);
             // This will be either true or false, based on if the string
             // matches or not.
             if (result) {

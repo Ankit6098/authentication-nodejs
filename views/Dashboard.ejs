@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Auth</title>
+    <link rel="stylesheet" href="/css/_navbar.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+<body>
+
+    <%- include('_navbar'); %>
+
+    <div class="main-container">
+        <div class="user-details-container">
+            <script src='https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js'></script><lottie-player src='https://lottie.host/aea02360-3c6f-43d6-8a74-30a465a981d7/ESRrDQw4iW.json' background='transparent' speed='1' style='width: 200px; height: 200px' loop autoplay direction='1' mode='normal'></lottie-player>
+            <h2><%= user.name %></h2>
+            <p><%= user.email %></p>
+        </div>
+    </div>
+
+</body>
+</html>

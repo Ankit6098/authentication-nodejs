@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Segoe UI Regular';
+    font-style: normal;
+    font-weight: lighter;
+    src: local('Segoe UI Regular'), url('Segoe UI.woff') format('woff');
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Poppins:wght@200&family=Roboto&family=Roboto+Mono&family=Roboto+Slab&family=Sofia+Sans:ital,wght@0,100;0,200;0,400;1,300&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url("../img/3725652.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* background-color: #1b1b1b; */
+    /* background-color: #0d1117; */
+    background-color: #ffffff;
+    font-family: 'Segoe UI Regular';
+}
+
+.main {
+    width: 100%;
+    height: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.heading {
+    width: 1200px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 20%;
+    z-index: 1;
+}
+
+.heading h2 {
+    font-size: 2.4rem;
+    /* font-weight: 600; */
+    /* color: #ffffff; */
+    color: black;
+    margin-bottom: 20px;
+}
+
+.heading p {
+    font-size: 1rem;
+    font-weight: 600;
+    /* color: #ffffff; */
+    color: black;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}

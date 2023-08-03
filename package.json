@@ -22,6 +22,7 @@
     "flash": "^1.1.0",
     "izitoast": "^1.4.0",
     "mongoose": "^7.3.4",
+    "nodemailer": "^6.9.4",
     "nodemon": "^3.0.1",
     "passport": "^0.6.0",
     "passport-github2": "^0.1.12",

@@ -1,11 +1,13 @@
-const exprerss = require('express');
-const router = exprerss.Router();
+const express = require('express');
+const router = express.Router();
 
-// const usersController = require('../controllers/usersController');
-const usersController = require('../controllers/userController')
-const homeController = require('../controllers/homeController')
+const welcomeController = require('../controllers/welcomeController');
+const usersController = require('../controllers/usersController');
+const dashboardController = require('../controllers/dashboardController');
 
-router.get('/', homeController.home);
-router.use('/user', require('./users'));
+router.get('/', welcomeController.welcome);
+router.get('/authentication', usersController.signinsignout);
+router.use('/user' , require('./signin-signout'));
+router.use('/dashboard' , require('./dashboard'));
 
 module.exports = router;
