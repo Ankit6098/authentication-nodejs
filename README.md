@@ -11,18 +11,22 @@ Node.js is a popular backend technology used for building web applications. It p
 ## Demo
 
 https://nodejs-auth-9sea.onrender.com
+
+
 # Features
 
-- <img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" width="20" height="20" alt="HTML5" /> Email
+- <img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" width="20" height="20" alt="email" /> Email
     - Sign In
     - Sign Up
 -  📱 Social Authentication
-    -  Google
-    -  Github
-- Display notifications for actions
-- Parallel Jobs for emails
-- Store encrypted password in the Database
-- Fully Responsive for mobile and desktop devices
+    -  <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" width="20" height="20" alt="google" /> Google
+    -  <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="20" height="20" alt="github" /> Github
+- <img src="https://cdn-icons-png.flaticon.com/512/1182/1182718.png" width="20" height="20" alt="notification" /> Display notifications for actions
+- <img src="https://cdn-icons-png.flaticon.com/512/1063/1063196.png" width="20" height="20" alt="parallel job" /> Parallel Jobs for emails
+- <img src="https://cdn-icons-png.flaticon.com/512/6802/6802071.png" width="20" height="20" alt="encrypt password" /> Store encrypted password in the Database
+- <img src="https://cdn-icons-png.flaticon.com/512/536/536255.png" width="20" height="20" alt="responsive" /> Fully Responsive for mobile and desktop devices
+
+  
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file
