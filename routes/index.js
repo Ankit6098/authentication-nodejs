@@ -5,8 +5,7 @@ const welcomeController = require('../controllers/welcomeController');
 const usersController = require('../controllers/usersController');
 const dashboardController = require('../controllers/dashboardController');
 
-router.get('/', welcomeController.welcome);
-router.get('/authentication', usersController.signinsignout);
+router.get('/', usersController.signinsignout);
 router.use('/user' , require('./signin-signout'));
 router.use('/dashboard' , require('./dashboard'));
 

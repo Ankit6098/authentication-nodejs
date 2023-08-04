@@ -26,14 +26,20 @@ body {
 
 .user-details-container {
     width: 600px;
-    height: 350px;
-    background-color: white;
+    height: 400px;
+    background-color: #ffffff;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.user-details-container h4 {
+    position: relative;
+    top: -2%;
+    margin-bottom: 20px;
 }
 
 .user-details-container h2 {
