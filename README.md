@@ -16,7 +16,8 @@ https://nodejs-auth-9sea.onrender.com
 -  <video width="256" height="256" preload="none" style="background: transparent  url('https://cdn-icons-png.flaticon.com/512/6569/6569156.png') 50% 50% / fit no-repeat;" autoplay="autoplay" loop="true" muted="muted" playsinline="">
         <source src="https://cdn-icons-mp4.flaticon.com/512/6569/6569156.mp4" type="video/mp4">
     </video> 
-    <source src="https://cdn-icons-mp4.flaticon.com/512/6569/6569156.mp4" type="video/mp4"> Email
+    <source src="https://cdn-icons-mp4.flaticon.com/512/6569/6569156.mp4" type="video/mp4"> 
+    Email
     - Sign In
     - Sign Up
 -  Social Authentication
