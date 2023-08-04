@@ -1,4 +1,4 @@
-# <img src="https://cdn-icons-png.flaticon.com/512/841/841097.png" width="20" height="20" alt="google" /> NodeJs Authentication
+# <img src="https://cdn-icons-png.flaticon.com/512/841/841097.png" width="35" height="35" alt="google" /> NodeJs Authentication
 
 An authentication system is a vital component of any web application, responsible for user registration, login, and access control. It verifies user identities and ensures that only authorized users can access specific features and data within the application. By safeguarding user information and maintaining data security, the authentication system establishes trust and confidence in the application while providing a seamless and secure user experience.
 
