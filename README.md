@@ -70,9 +70,11 @@ Start the Server
 ```
 ## Screenshots
 
-![image](https://github.com/Ankit6098/authentication-nodejs/assets/92246613/4bb25f24-0664-45cf-8250-056ef8349ae1)
-![image](https://github.com/Ankit6098/authentication-nodejs/assets/92246613/00f0de54-c1b0-4b3b-9dcc-2de67b58ee37)
-![image](https://github.com/Ankit6098/authentication-nodejs/assets/92246613/83ed1207-a32e-45d1-9ab9-32dc002db229)
+![image](https://github.com/Ankit6098/authentication-nodejs/assets/92246613/cead64c4-1dfa-4b2a-8cc7-b924e4be7674)
+
+![image](https://github.com/Ankit6098/authentication-nodejs/assets/92246613/1749e8fc-2031-4686-8e93-0d66acd29ee5)
+
+![image](https://github.com/Ankit6098/authentication-nodejs/assets/92246613/457208e5-aa01-40a7-abdd-6777b2675c8a)
 
 
 ## Acknowledgements
