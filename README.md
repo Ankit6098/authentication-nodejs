@@ -13,11 +13,7 @@ Node.js is a popular backend technology used for building web applications. It p
 https://nodejs-auth-9sea.onrender.com
 # Features
 
--  <video width="256" height="256" preload="none" style="background: transparent  url('https://cdn-icons-png.flaticon.com/512/6569/6569156.png') 50% 50% / fit no-repeat;" autoplay="autoplay" loop="true" muted="muted" playsinline="">
-        <source src="https://cdn-icons-mp4.flaticon.com/512/6569/6569156.mp4" type="video/mp4">
-    </video> 
-    <source src="https://cdn-icons-mp4.flaticon.com/512/6569/6569156.mp4" type="video/mp4"> 
-    Email
+- <source src="https://cdn-icons-mp4.flaticon.com/512/6569/6569156.mp4" type="video/mp4"> Email
     - Sign In
     - Sign Up
 -  Social Authentication
@@ -26,7 +22,7 @@ https://nodejs-auth-9sea.onrender.com
     -  Github
 - Display notifications for actions
 - Parallel Jobs for emails
-- Store encrypted password in Database
+- Store encrypted password in the Database
 - Fully Responsive for mobile and desktop devices
 ## Environment Variables
 
