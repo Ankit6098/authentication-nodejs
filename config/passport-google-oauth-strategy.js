@@ -1,14 +1,14 @@
-require('dotenv').config();
 const passport = require('passport');
 const googleStrategy = require('passport-google-oauth2').Strategy;
 const crypto = require('crypto');
 const User = require('../models/user');
+const env = require('./environment');
 
 // tell passport to use a new strategy for google login
 passport.use(new googleStrategy({
-    clientID: process.env.GOOGLE_CLIENT_ID,
-    clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: process.env.GOOGLE_CALLBACK_URL,
+    clientID: env.GOOGLE_CLIENT_ID,
+    clientSecret: env.GOOGLE_CLIENT_SECRET,
+    callbackURL: env.GOOGLE_CALLBACK_URL,
     },
     async function(request, accessToken, refreshToken, profile, done) {
         const user = await User.findOne({email: profile.emails[0].value});

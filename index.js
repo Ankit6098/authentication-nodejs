@@ -5,6 +5,7 @@ const port = 3000;
 const path = require('path');
 const flash = require('connect-flash');
 const customMware = require('./config/middleware');
+require('dotenv').config();
 
 // set up session cookie
 const session = require('express-session');
@@ -41,7 +42,7 @@ app.use(session({
         maxAge: (1000 * 60 * 100)
     },
     store: MongoStore.create({
-        mongoUrl: 'mongodb+srv://ankitvis609:Sonu135790@cluster0.esi3ulq.mongodb.net/nodejsAuth',
+        mongoUrl: process.env.mongoUrl,
         autoRemove: 'disabled'
     })
 }));
