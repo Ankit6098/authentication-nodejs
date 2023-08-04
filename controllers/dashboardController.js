@@ -1,3 +1,3 @@
 module.exports.dashboard = async function (req, res) {
-  res.render("Dashboard", { title: "Node Auth" });
+  res.render("Dashboard", { title: "NodeJs Auth" });
 };

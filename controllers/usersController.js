@@ -8,7 +8,7 @@ module.exports.signinsignout = async function(req, res) {
         return res.redirect('/dashboard');
       }
       return res.render('signin-signout', {
-        title: 'Sign In | Sign Up',
+        title: 'NodeJs Auth',
       });
     } catch (err) {
       console.log('Error', err);

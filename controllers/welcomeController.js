@@ -1,3 +1,3 @@
 module.exports.welcome = function(req, res) {
-    res.render('welcome', { title: 'Node Auth' });
+    res.render('welcome', { title: 'NodeJs Auth' });
 }
