@@ -26,4 +26,4 @@ const production = {
     mongoUrl: process.env.mongoUrl,
 }
 
-module.exports = development;
+module.exports = production;
