@@ -13,7 +13,7 @@ Node.js is a popular backend technology used for building web applications. It p
 https://nodejs-auth-9sea.onrender.com
 # Features
 
-- <img src="   https://cdn-icons-png.flaticon.com/512/5968/5968534.png " width=30px height="30px"  Email
+- <img src="   https://cdn-icons-png.flaticon.com/512/5968/5968534.png " width=30px height="30px"> Email
     - Sign In
     - Sign Up
 -  📱 Social Authentication
