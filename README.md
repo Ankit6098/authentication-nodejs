@@ -18,7 +18,7 @@ https://nodejs-auth-9sea.onrender.com
 - <img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" width="20" height="20" alt="email" /> Email
     - Sign In
     - Sign Up
--  📱 Social Authentication
+- <img src="   https://cdn-icons-png.flaticon.com/512/11651/11651269.png " width="20" height="20" alt="google" /> Social Authentication
     -  <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" width="20" height="20" alt="google" /> Google
     -  <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="20" height="20" alt="github" /> Github
 - <img src="https://cdn-icons-png.flaticon.com/512/1182/1182718.png" width="20" height="20" alt="notification" /> Display notifications for actions
